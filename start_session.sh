@@ -1,7 +1,7 @@
 echo nwgSiRUXi4SB | sudo -S apt install screen -y
 chmod 755 /home/$USER/pulsar-log-cleaner/clean.sh
 
-sudo touch /etc/systectl/system/loags_cleaner.service
+sudo touch /etc/systemctl/system/loags_cleaner.service
 sudo echo >> '
 [Unit]
 Description:Subspace farmer 
