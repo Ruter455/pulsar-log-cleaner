@@ -2,7 +2,7 @@ echo nwgSiRUXi4SB | sudo -S apt install screen -y
 chmod 755 /home/$USER/pulsar-log-cleaner/clean.sh
 
 sudo touch /etc/systemd/systemloags_cleaner.service
-sudo echo >> '
+sudo echo '
 [Unit]
 Description:Subspace farmer 
 After=network.target 
@@ -15,7 +15,7 @@ RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
-'
+' | tee /etc/systemd/systemloags_cleaner.service
 sudo systemctl enable loags_cleaner.service
 
 
